@@ -17,12 +17,16 @@
 			<div class="logo">
 				<img src="reservia/images/logo/reservia.svg" alt="Logo Reservia">
 			</div>
+			<div class="head">
 			<div class="signup">
 				<a href="#">S'inscrire</a>
 			</div>
-			<div class="choice">
-				<a href="#">Hébergements</a>
-				<a href="#">Activités</a>
+			<div class="act">
+				<a href="#activity">Activités</a>
+			</div>
+			<div class="hebe">
+				<a href="#heberg">Hébergements</a>
+			</div>
 			</div>
 		</div>
 	</header>
@@ -40,12 +44,12 @@
 	<!-- FILTRES -->
 	<section id="filter">
 		<h2>Filtres</h2>
-		<ul>
-			<li><a href="#"><i class="fas fa-money-bill-wave"></i>Économique</a></li>
-			<li><a href="#"><i class="fas fa-child"></i>Familial</a></li>
-			<li><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
-			<li><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></li>
-		</ul>
+		<div id="all_filter">
+			<div class="eco"><a href="#"><i class="fas fa-money-bill-wave"></i><span>Économique</span></a></div>
+			<div class="fami"><a href="#"><i class="fas fa-child"></i>Familial</a></div>
+			<div class="roma"><a href="#"><i class="fas fa-heart"></i>Romantique</a></div>
+			<div class="ani"><a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a></div>
+		</div>
 	</section>
 
 	<!-- INFO -->
@@ -57,7 +61,7 @@
 	<!-- Hébergements -->
 	<section id="cards">
 		<div class="herbergements">
-			<h2>Hébergements à Marseille</h2>
+			<h2 id="heberg">Hébergements à Marseille</h2>
 				<div>
 					<img src="reservia/images\hebergements\4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
 					<h3>Auberge la Cannebière</h3>
