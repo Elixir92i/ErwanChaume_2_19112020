@@ -13,23 +13,6 @@ a
     text-decoration: none;
 }
 
-/*##### MEDIA QUERIES #####
-@media screen and (max-width: 480px) {
-    .populaires {
-        order: 1;     
-    }
-    .hebergements{
-        order: 2;
-    }
-    #cards{
-        display: flex;
-    }
-    .populaires, .hebergements
-    {
-        flex-direction: column;
-    }
-  }*/
-
 /*##### HEADER #####*/
 
 .head
@@ -111,6 +94,10 @@ form
     background-color: #F2F2F2;
     display: flex;
     border-radius: 15px;
+}
+
+.find_logo{
+    display: none;
 }
 
 input
@@ -259,7 +246,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 .hebergements
 {
     height: 100%;
-    width: 60%;
+    width: 70%;
     background-color: #f2f2f2;
     border-radius: 25px;
     padding-left: 40px;
@@ -277,7 +264,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .hebeimg img
@@ -298,7 +285,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     left: 0px;
     background-color: white;
     height: 63px;
-    width: 236px;
+    width: 100%;
     border-radius: 0px 0px 20px 20px;
     padding-top: 12px;
 }
@@ -347,7 +334,6 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 
 .hebecards:hover
 {
-    /*box-shadow: 0px 0px 0px 5px rgba(0,101,252,1);*/
     box-shadow: 0px 0px 10px 2px rgba(0,101,252,1);
 }
 
@@ -367,13 +353,13 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 .populaires
 {
     height: 100%;
-    width: 40%;
+    width: 30%;
     background-color: #f2f2f2;
     border-radius: 25px;
     padding-left: 37px;
     padding-right: 40px;
     padding-top: 20px;
-    margin-left: 40px;
+   /* margin-left: 40px;*/
 }
 
 /*.populaires h2{
@@ -417,6 +403,11 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     margin-bottom: 33px;
 }
 
+.popucards:hover
+{
+    box-shadow: 0px 0px 10px 2px rgba(0,101,252,1);
+}
+
 .popuimg img
 {
     width: 127px;
@@ -454,4 +445,110 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 .popudesc h3, p
 {
     color: black;
+}
+
+/*##### MEDIA QUERIES #####
+@media screen and (max-width: 480px) {
+    .populaires {
+        order: 1;     
+    }
+    .hebergements{
+        order: 2;
+    }
+    #cards{
+        display: flex;
+    }
+    .populaires, .hebergements
+    {
+        flex-direction: column;
+    }
+  }*/
+
+  @media screen and (max-width: 1024px)
+{
+    .populaires {
+        order: 1;
+        width: 100%
+    }
+    .hebergements{
+        order: 2;
+        background-color: transparent;
+    }
+
+    .popucards{
+        width: 324px;
+    }
+    .popudesc{
+        width: 197px;
+    }
+    .popuimg{
+        width: 127px;
+    }
+    .hebecards{
+        width: 316px;
+    }
+    .hebedesc{
+        width: 100%;
+    }
+    .hebeimg{
+        width: 100%;
+    }
+    #cards{
+        display: flex;
+        flex-direction: column;
+    }
+    #allcards{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px)
+{
+    .populaires{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1713px)
+{
+    .hebecards{
+        /*margin-left: 30px;
+        margin-right: 30px;*/
+        width: 316px;
+    }
+    .hebedesc{
+        width: 100%;
+    }
+    .hebeimg{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    #button {
+        min-width: 51px;
+        border-radius: 14px;
+    }
+
+    .find_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find{
+        display: none;
+    }
+
+    form{
+        justify-content: space-between;
+        border: 1px solid #f2f2f2;
+        border-radius: 15px;
+        width: 80%;
+    }
+
+    body{
+        margin: 0px;
+    }
 }
