@@ -143,17 +143,12 @@ button:focus
 }
 
 /*##### FILTERS #####*/
-
-#filter
-{
-    margin-top: 31px;
-}
-
-#filter, #all_filter
+#all_filter
 {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-top: 31px;
 }
 
 #filter, h2
@@ -194,7 +189,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     color: black;
 }
 
-#filter .fas {
+#all_filter .fas {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -357,7 +352,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     background-color: #f2f2f2;
     border-radius: 25px;
     padding-left: 37px;
-    padding-right: 40px;
+    padding-right: 38px;
     padding-top: 20px;
    /* margin-left: 40px;*/
 }
@@ -447,58 +442,63 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     color: black;
 }
 
-/*##### MEDIA QUERIES #####
-@media screen and (max-width: 480px) {
-    .populaires {
-        order: 1;     
-    }
-    .hebergements{
-        order: 2;
-    }
-    #cards{
-        display: flex;
-    }
-    .populaires, .hebergements
-    {
-        flex-direction: column;
-    }
-  }*/
-
+/*##### MEDIA QUERIES #####*/
   @media screen and (max-width: 1024px)
 {
     .populaires {
         order: 1;
-        width: 100%
+        width: 80%;
+        border-radius: 0px;
     }
     .hebergements{
         order: 2;
         background-color: transparent;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
-    .popucards{
-        width: 324px;
+    /*.popucards{
+        width: -webkit-fill-available;
     }
     .popudesc{
-        width: 197px;
+        width: ;
     }
     .popuimg{
         width: 127px;
     }
-    .hebecards{
-        width: 316px;
-    }
+    
     .hebedesc{
         width: 100%;
     }
     .hebeimg{
         width: 100%;
+    }*/
+    .hebecards{
+        width: 90%;
+    }
+    .container{
+        width: 20%;
     }
     #cards{
         display: flex;
         flex-direction: column;
     }
+    #heberg{
+        margin-left: 20px;
+    }
+    .more{
+        margin-left: 20px;
+    }
     #allcards{
         width: 100%;
+        justify-content: center;
+    }
+
+    #all_filter
+    {
+        flex-wrap: wrap;
+        font-size: 12px;
     }
     
 }
