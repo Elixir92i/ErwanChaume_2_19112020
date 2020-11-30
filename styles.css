@@ -15,11 +15,11 @@ a
 
 /*##### HEADER #####*/
 
-.head
+/*.head
 {
     display: flex;
     flex-direction: row-reverse;
-}
+}*/
 
 .logo 
 {
@@ -27,10 +27,19 @@ a
     padding-top: 25px;
 }
 
+.head, .mobile_head{
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+.mobile_head{
+    width: 20%;
+}
+
 .signup
 {
-    border: transparent solid 2px;
-    width: 162px;
+    border: white solid 2px;
+    width: 20%;
     text-align: center;
     padding-top: 33px;
     font-weight: bold;
@@ -38,8 +47,8 @@ a
 
 .hebe
 {
-    border: transparent solid 2px;
-    width: 162px;
+    border: white solid 2px;
+    width: 50%;
     text-align: center;
     padding-top: 33px;
 }
@@ -52,7 +61,7 @@ a
 .act
 {
     border: transparent solid 2px;
-    width: 162px;
+    width: 50%;
     text-align: center;
     padding-top: 33px;
 }
@@ -447,61 +456,10 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 /*##### MEDIA QUERIES #####*/
   @media screen and (max-width: 1024px)
 {
-    .populaires {
-        order: 1;
-        width: 100%;
-        border-radius: 0px;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .hebergements{
-        order: 2;
-        background-color: transparent;
-        width: 100%;
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-
-    .container{
-        width: 20%;
-    }
-
-    .cards{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .heberg{
-        margin-left: 20px;
-    }
-
-    .more{
-        margin-left: 20px;
-    }
-
-    .allcards{
-        width: 100%;
-        justify-content: center;
-    }
-
     .all_filter
     {
         flex-wrap: wrap;
         font-size: 12px;
-    }
-
-    .stonks{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    body {
-        margin: 0px;
-    }
-
-    header, .research, .filter, #info {
-        margin-left: 3%;
-        margin-right: 3%;
     }
     
 }
@@ -528,12 +486,12 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     }
 }
 
-@media (max-width: 425px){
-    button {
+@media (max-width: 425px)
+{
+        button {
         width: 51px;
         border-radius: 14px 14px 14px 14px;
     }
-
     .find_logo{
         display: flex;
         align-items: center;
@@ -551,15 +509,110 @@ div.ani a, div.roma a, div.fami a, div.eco a{
         width: 80%;
     }
 
-    body{
-        margin: 0px;
-    }
-
     .popucards{
         width: 90%;
     }
 
     .hebecards{
         width: 90%;
+    }
+}
+
+@media (max-width: 1023px){
+    .mobile_head{
+        width: 100%;
+    }
+
+    .act{
+        width: 50%;
+    }
+    .act:hover{
+        border-bottom: #0065FC solid 2px;
+        border-top: none;
+    }
+
+    .hebe{
+        width: 50%;
+    }
+
+    .hebe:hover{
+        border-bottom: #0065FC solid 2px;
+        border-top: none;
+    }
+
+
+    .signup{
+        width: 100%;
+        text-align: end;
+    }
+
+    .head{
+        flex-direction: column;
+    }
+
+    body{
+        margin: 0px;
+    }
+
+    .hebecards{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .populaires {
+        order: 1;
+        width: 100%;
+        border-radius: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .allcards_popu{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .hebergements{
+        order: 2;
+        background-color: transparent;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heberg{
+        margin-left: 20px;
+    }
+
+    .more{
+        margin-left: 20px;
+    }
+
+    .allcards{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .all_filter
+    {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .stonks{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    header, .research, .filter, #info {
+        margin-left: 3%;
+        margin-right: 3%;
     }
 }
