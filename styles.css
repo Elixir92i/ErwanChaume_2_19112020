@@ -3,8 +3,8 @@
 body
 {
     font-family: 'Raleway', arial;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 a
@@ -64,24 +64,24 @@ a
 
 /*##### RESEARCH BAR #####*/
 
-#research
+.research
 {
     padding-top: 8px;
 }
 
-#research p, h1
+.research p, h1
 {
     margin: 0px;
     padding: 0px;
 }
 
-#research p
+.research p
 {
     margin-top: 9px;
     margin-bottom: 19px;
 }
 
-#research h1
+.research h1
 {
     margin-top: 48px;
 }
@@ -143,7 +143,7 @@ button:focus
 }
 
 /*##### FILTERS #####*/
-#all_filter
+.all_filter
 {
     display: flex;
     align-items: center;
@@ -151,7 +151,7 @@ button:focus
     margin-top: 31px;
 }
 
-#filter, h2
+.filter, h2
 {
     margin-right: 32px;
 }
@@ -189,7 +189,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     color: black;
 }
 
-#all_filter .fas {
+.all_filter .fas {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -204,14 +204,14 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 
 /*##### INFOS #####*/
 
-#info
+.info
 {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-#info .fas
+.info .fas
 {
     border: 1px solid #F2F2F2;
     height: 24px;
@@ -226,12 +226,12 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 
 /*##### CARDS #####*/
 
-#cards .stars
+.cards .stars
 {
     color:  #0065FC;
 }
 
-#cards .gris
+.cards .gris
 {
     color: #d9d9d9;
 }
@@ -255,7 +255,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     color: black;
 }
 
-#allcards
+.allcards
 {
     display: flex;
     flex-wrap: wrap;
@@ -272,6 +272,8 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     top: 0px;
     left: 0px;
 }
+
+
 
 .hebedesc
 {
@@ -340,7 +342,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 }
 
 /* ##### Populaires ##### */
-#cards
+.cards
 {
     display: inline-flex;
 
@@ -405,7 +407,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 
 .popuimg img
 {
-    width: 127px;
+    width: 40%;
     height: 134px;
     border-radius: 20px 0px 0px 20px;
     position: absolute;
@@ -417,14 +419,14 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 {
     position: absolute;
     top: 0px;
-    left: 132px;
+    left: 40%;
     background-color: white;
     height: 134px;
-    width: 211px;
+    width: 61%;
     border-radius: 0px 20px 20px 0px;
 }
 
-#allcards_popu
+.allcards_popu
 {
     display: flex;
     justify-content: space-evenly;
@@ -447,8 +449,10 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 {
     .populaires {
         order: 1;
-        width: 80%;
+        width: 100%;
         border-radius: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .hebergements{
         order: 2;
@@ -458,47 +462,46 @@ div.ani a, div.roma a, div.fami a, div.eco a{
         padding-left: 0px;
     }
 
-    /*.popucards{
-        width: -webkit-fill-available;
-    }
-    .popudesc{
-        width: ;
-    }
-    .popuimg{
-        width: 127px;
-    }
-    
-    .hebedesc{
-        width: 100%;
-    }
-    .hebeimg{
-        width: 100%;
-    }*/
-    .hebecards{
-        width: 90%;
-    }
     .container{
         width: 20%;
     }
-    #cards{
+
+    .cards{
         display: flex;
         flex-direction: column;
     }
-    #heberg{
+
+    .heberg{
         margin-left: 20px;
     }
+
     .more{
         margin-left: 20px;
     }
-    #allcards{
+
+    .allcards{
         width: 100%;
         justify-content: center;
     }
 
-    #all_filter
+    .all_filter
     {
         flex-wrap: wrap;
         font-size: 12px;
+    }
+
+    .stonks{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    header, .research, .filter, #info {
+        margin-left: 3%;
+        margin-right: 3%;
     }
     
 }
@@ -526,9 +529,9 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 }
 
 @media (max-width: 425px){
-    #button {
-        min-width: 51px;
-        border-radius: 14px;
+    button {
+        width: 51px;
+        border-radius: 14px 14px 14px 14px;
     }
 
     .find_logo{
@@ -550,5 +553,13 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 
     body{
         margin: 0px;
+    }
+
+    .popucards{
+        width: 90%;
+    }
+
+    .hebecards{
+        width: 90%;
     }
 }
