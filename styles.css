@@ -1,5 +1,9 @@
 /*##### GENERAL #####*/
-
+html{
+    max-width: 1920px;
+    min-width: 280px;
+    margin: auto;
+}
 body
 {
     font-family: 'Raleway', arial;
@@ -158,6 +162,7 @@ button:focus
     align-items: center;
     flex-direction: row;
     margin-top: 31px;
+    flex-wrap: wrap;
 }
 
 .filter, h2
@@ -336,6 +341,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     margin-bottom: 30px;
     box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
     transition: box-shadow 300ms; 
+    overflow: hidden;
 }
 
 .hebecards:hover
@@ -453,6 +459,134 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     color: black;
 }
 
+/*##### ACTIVITÉS #####*/
+.activity
+{
+    width: 100%;
+    height: 100%;
+}
+
+.cards_act
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards_act h3
+{
+    margin-left: 16px;
+}
+
+.xlcard, .lscard, .mmcard
+{
+    /*flex-direction: row;*/
+    width: 20%;
+    /*max-width: 302px;*/
+    /*height: 100%;*/
+}
+
+/*.xlcard img, .lscard img, .mmcard img
+{
+    max-width: 100%;
+}*/
+
+/*.port, .parc
+{
+    max-height: 445px;
+}*/
+
+.port, .fort, .iles, .garde, .parclong, .parc {
+    overflow: hidden;
+    position: relative;
+    /*height: 445px;*/
+    border-radius: 25px;
+    display: flex;
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    transition: box-shadow 300ms; 
+}
+.port:hover, .fort:hover, .iles:hover, .garde:hover, .parclong:hover, .parc:hover{
+    box-shadow: 0px 0px 10px 2px rgba(0,101,252,1);
+}
+
+.port, .parc
+{
+    height: 446px;
+}
+
+.garde{
+    height: 196px;
+}
+
+.parclong{
+    height: 209px;
+}
+
+.fort{
+    height: 237px;
+}
+
+.mmcard, .lscard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iles{
+    height: 166px;
+}
+
+.title_actxl
+{
+    position: absolute;
+    top: 88%;
+    background-color: white;
+    width: 100%;
+}
+
+.title_actl
+{
+    position: absolute;
+    top: 76%;
+    background-color: white;
+    width: 100%;
+}
+
+.title_acts
+{
+    position: absolute;
+    top: 66%;
+    background-color: white;
+    width: 100%;
+}
+
+.title_actms
+{
+    position: absolute;
+    top: 71%;
+    background-color: white;
+    width: 100%;
+}
+
+.title_actml
+{
+    position: absolute;
+    top: 73%;
+    background-color: white;
+    width: 100%;
+}
+
+.xlimg img, .limg img, .simg img, .mimg img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title_actxl, .title_actl, .title_actms, .title_actml, .title_acts{
+    height: 56px;
+}
+
 /*##### MEDIA QUERIES #####*/
   @media screen and (max-width: 1024px)
 {
@@ -464,7 +598,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     
 }
 
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1045px)
 {
     .populaires{
         margin-left: 40px;
@@ -488,7 +622,7 @@ div.ani a, div.roma a, div.fami a, div.eco a{
 
 @media (max-width: 425px)
 {
-        button {
+    button {
         width: 51px;
         border-radius: 14px 14px 14px 14px;
     }
@@ -514,11 +648,48 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     }
 
     .hebecards{
-        width: 90%;
+        width: 100%;
+    }
+
+    .cards_act h3
+    {
+        font-size: 14px;
     }
 }
 
-@media (max-width: 1023px){
+@media only screen and (max-width: 1044px) and (min-width: 426px){
+    .allcards_popu{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 319px){
+    /*.popudesc h3, p, .popustars{
+        padding: 0px;
+        margin: 0px;
+    }*/
+    .popudesc h3{
+        font-size: 14px;
+    }
+    .popudesc p{
+        font-size: 13px;
+    }
+    .popustars{
+        font-size: 13px;
+    }
+    .hebedesc h3{
+        font-size: 14px;
+    }
+    .hebedesc p{
+        font-size: 13px;
+    }
+    .stars{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1044px){
     .mobile_head{
         width: 100%;
     }
@@ -539,7 +710,6 @@ div.ani a, div.roma a, div.fami a, div.eco a{
         border-bottom: #0065FC solid 2px;
         border-top: none;
     }
-
 
     .signup{
         width: 100%;
@@ -614,5 +784,39 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     header, .research, .filter, #info {
         margin-left: 3%;
         margin-right: 3%;
+    }
+    .xlcard, .lscard, .mmcard{
+        width: 40%;
+    }
+    .port, .lscard{
+        margin-bottom: 22px;
+    }
+    /*.fort, .garde{
+        margin-bottom: 42px;
+    }*/
+    .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 531px){
+    /*.hebecards{
+        width: 338px;
+    } mettre entre min et max*/
+
+    .xlcard, .lscard, .mmcard{
+        width: 90%;
+    }
+    .port, .lscard{
+        margin-bottom: 0px;
+    }
+    .port, .fort, .iles, .garde, .parc{
+        margin-bottom: 22px;
+    }
+    .port, .fort, .iles, .garde, .parclong, .parc{
+        height: 190px;
+    }
+    .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts{
+        top: 71%;
     }
 }
