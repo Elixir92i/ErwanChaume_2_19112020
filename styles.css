@@ -1,53 +1,42 @@
 /*##### GENERAL #####*/
-html{
+
+html {
     max-width: 1920px;
     min-width: 280px;
     margin: auto;
 }
-body
-{
+
+body {
     font-family: 'Raleway', arial;
     margin: 0px;
-    /*margin-left: 3%;
-    margin-right: 3%;*/
-}
-
-header, section{
     margin-left: 3%;
     margin-right: 3%;
 }
 
-a
-{
-    color: #0065FC;
-    text-decoration: none;
+footer {
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
+a{
+    text-decoration: none;
+}
 /*##### HEADER #####*/
-
-/*.head
-{
-    display: flex;
-    flex-direction: row-reverse;
-}*/
-
-.logo 
-{
+.logo {
     position: absolute;
     padding-top: 25px;
 }
 
-.head, .mobile_head{
+.head, .mobile_head {
     flex-direction: row-reverse;
     display: flex;
 }
 
-.mobile_head{
+.mobile_head {
     width: 20%;
 }
 
-.signup
-{
+.signup {
     border: white solid 2px;
     width: 20%;
     text-align: center;
@@ -55,92 +44,83 @@ a
     font-weight: bold;
 }
 
-.hebe
-{
-    border: white solid 2px;
+.hebe {
+    border: transparent solid 2px;
+    border-top: #0065FC solid 2px;
     width: 50%;
     text-align: center;
     padding-top: 33px;
 }
 
-.hebe:hover
-{
-    border-top: #0065FC solid 2px;
-}
-
-.act
-{
+.act {
     border: transparent solid 2px;
     width: 50%;
     text-align: center;
     padding-top: 33px;
 }
 
-.act:hover
-{
-    border-top: #0065FC solid 2px;
+.signup a, .hebe a{
+    color: #0065FC;
 }
 
+.act a{
+    color: black;
+}
 /*##### RESEARCH BAR #####*/
 
-.research
-{
+.research {
     padding-top: 8px;
 }
 
-.research p, h1
-{
+.research p, h1 {
     margin: 0px;
     padding: 0px;
 }
 
-.research p
-{
+.research p {
     margin-top: 9px;
     margin-bottom: 19px;
 }
 
-.research h1
-{
+.research h1 {
     margin-top: 48px;
 }
 
-.research .fas{
-    color: black;
+.search {
+    font-weight: bold;
+    width: 234px;
+    border-style: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
 }
 
-form
-{
-    border: 2px solid transparent;
+form {
     width: 418px;
     height: 49px;
-    background-color: #F2F2F2;
     display: flex;
     border-radius: 15px;
 }
 
-.find_logo{
-    display: none;
+.marker .fas{
+    color: black;
 }
 
-input
-{
-    border-style: none;
-    outline: 1px solid white;
-    width: 234px;
-    font-weight: bold;
-    padding-left: 17px;
+.marker {
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.find_logo {
+    display: none;
 }
 
 ::placeholder {
     color: black;
     opacity: 1;
     font-size: 15px;
-  }
+}
 
-button
-{
-    box-shadow: 0px 0px 0px 2px #0065FC;
+button {
     width: 134px;
     border: none;
     background-color: #0065FC;
@@ -151,13 +131,11 @@ button
     cursor: pointer;
 }
 
-button:focus 
-{
-    outline:0;
+button:focus {
+    outline: 0;
 }
 
-.fa-map-marker-alt
-{
+.fa-map-marker-alt {
     height: 52px;
     padding-top: 15px;
     padding-right: 19px;
@@ -166,8 +144,8 @@ button:focus
 }
 
 /*##### FILTERS #####*/
-.all_filter
-{
+
+.all_filter {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -175,13 +153,11 @@ button:focus
     flex-wrap: wrap;
 }
 
-.filter, h2
-{
+.filter, h2 {
     margin-right: 32px;
 }
 
-.eco, .ani, .fami, .roma
-{
+.eco, .ani, .fami, .roma {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -194,9 +170,8 @@ button:focus
     transition: background-color 500ms;
 }
 
-.eco:hover, .ani:hover, .fami:hover, .roma:hover
-{
-    background-color:  #0065FC;
+.eco:hover, .ani:hover, .fami:hover, .roma:hover {
+    background-color: #0065FC;
     color: white;
 }
 
@@ -208,7 +183,7 @@ div.ani:hover a, .roma:hover a, .fami:hover a, .eco:hover a {
     color: white;
 }
 
-div.ani a, div.roma a, div.fami a, div.eco a{
+div.ani a, div.roma a, div.fami a, div.eco a {
     font-weight: bold;
     color: black;
 }
@@ -223,20 +198,18 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     border: solid #DEEBFF;
     background-color: #DEEBFF;
     margin-right: 13px;
-    color:  #0065FC;
+    color: #0065FC;
 }
 
 /*##### INFOS #####*/
 
-.info
-{
+.info {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.info .fas
-{
+.info .fas {
     border: 1px solid #F2F2F2;
     height: 24px;
     width: 24px;
@@ -244,26 +217,23 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color:  #0065FC;
+    color: #0065FC;
     margin-right: 12px;
 }
 
 /*##### CARDS #####*/
 
-.cards .stars
-{
-    color:  #0065FC;
+.cards .stars {
+    color: #0065FC;
 }
 
-.cards .gris
-{
+.cards .gris {
     color: #d9d9d9;
 }
 
 /*##### HÉBERGEMENTS #####*/
 
-.hebergements
-{
+.hebergements {
     height: 100%;
     width: 70%;
     background-color: #f2f2f2;
@@ -274,33 +244,29 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     padding-bottom: 34px;
 }
 
-.hebergements a
-{
+.hebergements a {
     color: black;
 }
 
-.allcards
-{
+.allcards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.hebeimg img
-{
+.hebeimg {
+    height: 119px;
     width: 100%;
-    height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    position: absolute;
-    object-position: 0 -25px;
-    top: 0px;
-    left: 0px;
+    display: flex;
 }
 
+.hebeimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-
-.hebedesc
-{
+.hebedesc {
     position: absolute;
     top: 119px;
     left: 0px;
@@ -311,35 +277,29 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     padding-top: 12px;
 }
 
-.hebergements h3
-{
+.hebergements h3 {
     font-size: 16px;
 }
 
-.hebergements p
-{
+.hebergements p {
     font-size: 14px;
     font-weight: bold;
 }
 
-.hebergements .fas
-{
+.hebergements .fas {
     font-size: 12px;
 }
 
-.hebedesc h3, p
-{
+.hebedesc h3, p {
     margin: 0px;
     padding: 0px;
 }
 
-.hebedesc h3, p, .stars
-{
+.hebedesc h3, p, .stars {
     margin-left: 11px;
 }
 
-.hebecards
-{
+.hebecards {
     flex-direction: column;
     position: relative;
     display: flex;
@@ -347,33 +307,29 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     height: 189px;
     border: 5px solid white;
     border-radius: 25px;
-    /*margin-right: 31px;*/
     margin-bottom: 30px;
-    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
-    transition: box-shadow 300ms; 
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+    transition: box-shadow 300ms;
     overflow: hidden;
 }
 
-.hebecards:hover
-{
-    box-shadow: 0px 0px 10px 2px rgba(0,101,252,1);
+.hebecards:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 101, 252, 1);
 }
 
-.more
-{
+.more {
     margin-top: 20px;
     color: black;
     font-weight: bold;
 }
 
 /* ##### Populaires ##### */
-.cards
-{
-    display: inline-flex;
 
+.cards {
+    display: inline-flex;
 }
-.populaires
-{
+
+.populaires {
     height: 100%;
     width: 30%;
     background-color: #f2f2f2;
@@ -381,67 +337,49 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     padding-left: 37px;
     padding-right: 38px;
     padding-top: 20px;
-   /* margin-left: 40px;*/
 }
 
-/*.populaires h2{
-    margin-left: 10%;
-}
-
-.populaires .stonks
-{
-    position: absolute;
-}
-
-.populaires h2, .stonks
-{
-    display: inline-flex;
-    color: black;
-}*/
-
-.stonks
-{
+.stonks {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.stonks .fas
-{
+.stonks .fas {
     font-size: 23px;
 }
 
-.popucards
-{
-    flex-direction: column;
+.popucards {
+    overflow: hidden;
     position: relative;
+    border-radius: 25px;
     display: flex;
+    flex-direction: column;
     width: 338px;
     height: 134px;
     border: 5px solid white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
-    transition: box-shadow 300ms; 
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+    transition: box-shadow 300ms;
     margin-bottom: 33px;
 }
 
-.popucards:hover
-{
-    box-shadow: 0px 0px 10px 2px rgba(0,101,252,1);
+.popucards:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 101, 252, 1);
 }
 
-.popuimg img
-{
+.popuimg {
     width: 40%;
     height: 134px;
-    border-radius: 20px 0px 0px 20px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    display: flex;
 }
 
-.popudesc
-{
+.popuimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popudesc {
     position: absolute;
     top: 0px;
     left: 40%;
@@ -451,55 +389,55 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     border-radius: 0px 20px 20px 0px;
 }
 
-.allcards_popu
-{
+.allcards_popu {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
 
-.popudesc h3, p, .popustars
-{
+.popudesc h3, p, .popustars {
     margin-left: 11px;
 }
 
-.popudesc h3, p
-{
+.popustars .fas{
+    color: #0065FC;
+}
+
+.popustars .gris{
+    color: #d9d9d9;
+}
+
+.popudesc h3, p {
     color: black;
 }
 
 /*##### ACTIVITÉS #####*/
-.activity
-{
+#activity {
     width: 100%;
     height: 100%;
     margin: 0px;
 }
 
-.activity a{
+#activity a {
     color: black;
 }
 
-.activity h2
-{
+#activity h2 {
     margin-left: 3%;
 }
 
-.cards_act
-{
+.cards_act {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.cards_act h3
-{
+.cards_act h3 {
     margin-left: 16px;
 }
 
-.xlcard, .lscard, .mmcard
-{
+.xlcard, .lscard, .mmcard {
     width: 20%;
 }
 
@@ -508,93 +446,79 @@ div.ani a, div.roma a, div.fami a, div.eco a{
     position: relative;
     border-radius: 25px;
     display: flex;
-    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
-    transition: box-shadow 300ms; 
-}
-.port:hover, .fort:hover, .iles:hover, .garde:hover, .parclong:hover, .parc:hover{
-    box-shadow: 0px 0px 10px 2px rgba(0,101,252,1);
+    box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+    transition: box-shadow 300ms;
 }
 
-.port, .parc
-{
+.port:hover, .fort:hover, .iles:hover, .garde:hover, .parclong:hover, .parc:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 101, 252, 1);
+}
+
+.port, .parc {
     height: 446px;
 }
 
-.garde{
+.garde {
     height: 196px;
 }
 
-.parclong{
+.parclong {
     height: 209px;
 }
 
-.fort{
+.fort {
     height: 237px;
 }
 
-.mmcard, .lscard{
+.mmcard, .lscard {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.iles{
+.iles {
     height: 166px;
 }
 
-.title_actxl
-{
+.title_actxl, .title_actl, .title_acts, .title_actms, .title_actml{
     position: absolute;
+    background-color: white;
+    width: 100%;
+}
+
+.title_actxl {
     top: 88%;
-    background-color: white;
-    width: 100%;
 }
 
-.title_actl
-{
-    position: absolute;
+.title_actl {
     top: 76%;
-    background-color: white;
-    width: 100%;
 }
 
-.title_acts
-{
-    position: absolute;
+.title_acts {
     top: 66%;
-    background-color: white;
-    width: 100%;
 }
 
-.title_actms
-{
-    position: absolute;
+.title_actms {
     top: 71%;
-    background-color: white;
-    width: 100%;
 }
 
-.title_actml
-{
-    position: absolute;
+.title_actml {
     top: 73%;
-    background-color: white;
-    width: 100%;
 }
 
-.xlimg img, .limg img, .simg img, .mimg img
-{
+.xlimg img, .limg img, .simg img, .mimg img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.title_actxl, .title_actl, .title_actms, .title_actml, .title_acts{
+.title_actxl, .title_actl, .title_actms, .title_actml, .title_acts {
     height: 56px;
 }
 
 /*##### FOOTER #####*/
-footer{
+
+footer {
     background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
@@ -604,167 +528,148 @@ footer{
     padding-bottom: 35px;
 }
 
-.about, .quality, .assistance{
+.about, .quality, .assistance {
     width: 33%;
     color: black;
 }
 
-footer li{
+footer li {
     list-style-type: none;
     margin-bottom: 15px;
 }
 
-footer ul{
+footer ul {
     margin: 0px;
     padding: 0px;
 }
 
-footer a{
+footer a {
     color: black;
 }
 
 /*##### MEDIA QUERIES #####*/
-  @media screen and (max-width: 1024px)
-{
-    .all_filter
-    {
+
+@media screen and (max-width: 1024px) {
+    .all_filter {
         flex-wrap: wrap;
         font-size: 12px;
     }
-    
 }
 
-@media screen and (min-width: 1045px)
-{
-    .populaires{
+@media screen and (min-width: 1045px) {
+    .populaires {
         margin-left: 40px;
     }
 }
 
-@media screen and (min-width: 1713px)
-{
-    .hebecards{
-        /*margin-left: 30px;
-        margin-right: 30px;*/
+@media screen and (min-width: 1713px) {
+    .hebecards {
         width: 316px;
     }
-    .hebedesc{
+    .hebedesc {
         width: 100%;
     }
-    .hebeimg{
+    .hebeimg {
         width: 100%;
     }
 }
 
-@media (max-width: 425px)
-{
+@media (max-width: 425px) {
     button {
         width: 51px;
-        border-radius: 14px 14px 14px 14px;
+        border-radius: 14px;
     }
-    .find_logo{
+    button .fas {
+        color: white;
+    }
+    .find_logo {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    .find{
+    .find {
         display: none;
     }
-
-    form{
+    .search {
+        border: none;
+    }
+    form {
         justify-content: space-between;
         border: 1px solid #f2f2f2;
         border-radius: 15px;
-        width: 80%;
-    }
-
-    .popucards{
-        width: 90%;
-    }
-
-    .hebecards{
         width: 100%;
     }
-
-    .cards_act h3
-    {
+    .search {
+        border: none;
+        width: 60%;
+    }
+    .popucards {
+        width: 90%;
+    }
+    .hebecards {
+        width: 100%;
+    }
+    .cards_act h3 {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 1044px) and (min-width: 426px){
-    .allcards_popu{
+@media only screen and (max-width: 1044px) and (min-width: 426px) {
+    .allcards_popu {
         margin-right: 10px;
         margin-left: 10px;
     }
 }
 
-@media (max-width: 319px){
-    /*.popudesc h3, p, .popustars{
-        padding: 0px;
-        margin: 0px;
-    }*/
-    .popudesc h3{
+@media (max-width: 319px) {
+    .popudesc h3 {
         font-size: 14px;
     }
-    .popudesc p{
+    .popudesc p {
         font-size: 13px;
     }
-    .popustars{
+    .popustars {
         font-size: 13px;
     }
-    .hebedesc h3{
+    .hebedesc h3 {
         font-size: 14px;
     }
-    .hebedesc p{
+    .hebedesc p {
         font-size: 13px;
     }
-    .stars{
+    .stars {
         font-size: 13px;
     }
 }
 
-@media (max-width: 1044px){
-    .mobile_head{
+@media (max-width: 1044px) {
+    .mobile_head {
         width: 100%;
     }
-
-    .act{
+    .act {
+        border-bottom: #F2F2F2 solid 3px;
+        border-top: none;
         width: 50%;
     }
-    .act:hover{
-        border-bottom: #0065FC solid 2px;
+    .hebe {
+        border-bottom: #0065FC solid 3px;
         border-top: none;
-    }
-
-    .hebe{
         width: 50%;
     }
-
-    .hebe:hover{
-        border-bottom: #0065FC solid 2px;
-        border-top: none;
-    }
-
-    .signup{
+    .signup {
         width: 100%;
         text-align: end;
     }
-
-    .head{
+    .head {
         flex-direction: column;
     }
-
-    body{
+    body {
         margin: 0px;
     }
-
-    .hebecards{
-        margin-left: 10px;
-        margin-right: 10px;
+    .hebecards {
+        margin-left: 20px;
+        margin-right: 20px;
     }
-
     .populaires {
         order: 1;
         width: 100%;
@@ -772,87 +677,88 @@ footer a{
         padding-right: 0px;
         padding-left: 0px;
     }
-    .allcards_popu{
+    .allcards_popu {
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .hebergements{
+    .hebergements {
         order: 2;
         background-color: transparent;
         width: 100%;
         padding-right: 0px;
         padding-left: 0px;
     }
-
-    .cards{
+    .cards {
         display: flex;
         flex-direction: column;
     }
-
-    .heberg{
+    #heberg {
         margin-left: 20px;
     }
-
-    .more{
+    .more {
         margin-left: 20px;
     }
-
-    .allcards{
+    .allcards {
         width: 100%;
         justify-content: space-evenly;
     }
-
-    .all_filter
-    {
+    .all_filter {
         flex-wrap: wrap;
         font-size: 12px;
     }
-
-    .stonks{
+    .stonks {
         margin-left: 20px;
         margin-right: 20px;
     }
-
     body {
         margin: 0px;
     }
-
     header, .research, .filter, #info {
         margin-left: 3%;
         margin-right: 3%;
     }
-    .xlcard, .lscard, .mmcard{
+    .xlcard, .lscard, .mmcard {
         width: 40%;
     }
-    .port, .lscard{
+    .port, .lscard {
         margin-bottom: 22px;
     }
-    /*.fort, .garde{
-        margin-bottom: 42px;
-    }*/
-    .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts{
+    .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts {
         font-size: 15px;
     }
 }
 
-@media (max-width: 531px){
-    /*.hebecards{
+@media (max-width: 571px) and (min-width: 426px) {
+    .hebecards {
         width: 338px;
-    } mettre entre min et max*/
+    }
+}
 
-    .xlcard, .lscard, .mmcard{
+@media (max-width: 531px) {
+    .xlcard, .lscard, .mmcard {
         width: 90%;
     }
-    .port, .lscard{
+    .port, .lscard {
         margin-bottom: 0px;
     }
-    .port, .fort, .iles, .garde, .parc{
+    .port, .fort, .iles, .garde, .parc {
         margin-bottom: 22px;
     }
-    .port, .fort, .iles, .garde, .parclong, .parc{
+    .port, .fort, .iles, .garde, .parclong, .parc {
         height: 190px;
     }
-    .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts{
+    .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts {
         top: 71%;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .about, .quality, .assistance {
+        margin-bottom: 20px;
+        width: 100%;
     }
 }
