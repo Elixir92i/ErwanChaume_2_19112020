@@ -9,8 +9,13 @@ html {
 body {
     font-family: 'Raleway', arial;
     margin: 0px;
-    margin-left: 3%;
+    /*margin-left: 3%;
+    margin-right: 3%;*/
+}
+
+.cards, .research, .head, .logo, .filter, .info{
     margin-right: 3%;
+    margin-left: 3%;
 }
 
 footer {
@@ -88,7 +93,7 @@ a{
     margin-top: 48px;
 }
 
-.search {
+#search {
     font-weight: bold;
     width: 234px;
     border-style: none;
@@ -525,6 +530,10 @@ div.ani a, div.roma a, div.fami a, div.eco a {
 
 /*##### FOOTER #####*/
 
+body, footer{
+    margin: 0;
+}
+
 footer {
     background-color: #f2f2f2;
     display: flex;
@@ -604,16 +613,13 @@ footer a {
     .find {
         display: none;
     }
-    .search {
-        border: none;
-    }
     form {
         justify-content: space-between;
         border: 1px solid #f2f2f2;
         border-radius: 15px;
         width: 100%;
     }
-    .search {
+    #search {
         border: none;
         width: 60%;
     }
@@ -712,6 +718,7 @@ footer a {
     .cards {
         display: flex;
         flex-direction: column;
+        margin: 0px;
     }
     #heberg {
         margin-left: 20px;
