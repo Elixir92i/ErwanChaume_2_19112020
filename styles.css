@@ -631,6 +631,7 @@ footer a {
     }
     .cards_act h3 {
         font-size: 14px;
+        margin-top: 19px;
     }
 }
 
@@ -784,5 +785,6 @@ footer a {
     .about, .quality, .assistance {
         margin-bottom: 20px;
         width: 100%;
+        /*margin-left: 20px;*/
     }
 }
