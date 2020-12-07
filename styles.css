@@ -50,6 +50,7 @@ a{
     width: 50%;
     text-align: center;
     padding-top: 33px;
+    margin-right: 10px;
 }
 
 .act {
@@ -57,6 +58,7 @@ a{
     width: 50%;
     text-align: center;
     padding-top: 33px;
+    margin-left: 10px;
 }
 
 .signup a, .hebe a{
@@ -149,11 +151,16 @@ button:focus {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: 31px;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.filter, h2 {
+.filter, .all_filter{
+    display: inline-flex;
+}
+
+.filter h2 {
+    margin-top: 30px;
     margin-right: 32px;
 }
 
@@ -491,19 +498,19 @@ div.ani a, div.roma a, div.fami a, div.eco a {
 }
 
 .title_actl {
-    top: 76%;
+    top: 77%;
 }
 
 .title_acts {
-    top: 66%;
+    top: 67%;
 }
 
 .title_actms {
-    top: 71%;
+    top: 72%;
 }
 
 .title_actml {
-    top: 73%;
+    top: 74%;
 }
 
 .xlimg img, .limg img, .simg img, .mimg img {
@@ -533,12 +540,19 @@ footer {
     color: black;
 }
 
+footer p{
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+
 footer li {
     list-style-type: none;
     margin-bottom: 15px;
 }
 
-footer ul {
+footer ul{
     margin: 0px;
     padding: 0px;
 }
@@ -666,6 +680,13 @@ footer a {
     body {
         margin: 0px;
     }
+    .filter, .all_filter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all_filter div{
+        margin-bottom: 13px;
+    }
     .hebecards {
         margin-left: 20px;
         margin-right: 20px;
@@ -703,15 +724,11 @@ footer a {
         justify-content: space-evenly;
     }
     .all_filter {
-        flex-wrap: wrap;
         font-size: 12px;
     }
     .stonks {
         margin-left: 20px;
         margin-right: 20px;
-    }
-    body {
-        margin: 0px;
     }
     header, .research, .filter, #info {
         margin-left: 3%;
