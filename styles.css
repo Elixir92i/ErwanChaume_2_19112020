@@ -9,11 +9,9 @@ html {
 body {
     font-family: 'Raleway', arial;
     margin: 0px;
-    /*margin-left: 3%;
-    margin-right: 3%;*/
 }
 
-.cards, .research, .head, .logo, .filter, .info{
+.cards, .research, .signup, .logo, .filter, .info {
     margin-right: 3%;
     margin-left: 3%;
 }
@@ -23,10 +21,12 @@ footer {
     margin-right: 0px;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 /*##### HEADER #####*/
+
 .logo {
     position: absolute;
     padding-top: 25px;
@@ -66,13 +66,14 @@ a{
     margin-left: 10px;
 }
 
-.signup a, .hebe a{
+.signup a, .hebe a {
     color: #0065FC;
 }
 
-.act a{
+.act a {
     color: black;
 }
+
 /*##### RESEARCH BAR #####*/
 
 .research {
@@ -108,7 +109,7 @@ form {
     border-radius: 15px;
 }
 
-.marker .fas{
+.marker .fas {
     color: black;
 }
 
@@ -160,7 +161,7 @@ button:focus {
     margin-top: 10px;
 }
 
-.filter, .all_filter{
+.filter, .all_filter {
     display: inline-flex;
 }
 
@@ -412,11 +413,11 @@ div.ani a, div.roma a, div.fami a, div.eco a {
     margin-left: 11px;
 }
 
-.popustars .fas{
+.popustars .fas {
     color: #0065FC;
 }
 
-.popustars .gris{
+.popustars .gris {
     color: #d9d9d9;
 }
 
@@ -425,6 +426,7 @@ div.ani a, div.roma a, div.fami a, div.eco a {
 }
 
 /*##### ACTIVITÉS #####*/
+
 #activity {
     width: 100%;
     height: 100%;
@@ -492,7 +494,7 @@ div.ani a, div.roma a, div.fami a, div.eco a {
     height: 166px;
 }
 
-.title_actxl, .title_actl, .title_acts, .title_actms, .title_actml{
+.title_actxl, .title_actl, .title_acts, .title_actms, .title_actml {
     position: absolute;
     background-color: white;
     width: 100%;
@@ -530,7 +532,7 @@ div.ani a, div.roma a, div.fami a, div.eco a {
 
 /*##### FOOTER #####*/
 
-body, footer{
+body, footer {
     margin: 0;
 }
 
@@ -549,7 +551,7 @@ footer {
     color: black;
 }
 
-footer p{
+footer p {
     font-weight: bold;
     font-size: 19px;
     margin-bottom: 20px;
@@ -561,7 +563,7 @@ footer li {
     margin-bottom: 15px;
 }
 
-footer ul{
+footer ul {
     margin: 0px;
     padding: 0px;
 }
@@ -571,19 +573,7 @@ footer a {
 }
 
 /*##### MEDIA QUERIES #####*/
-
-@media screen and (max-width: 1024px) {
-    .all_filter {
-        flex-wrap: wrap;
-        font-size: 12px;
-    }
-}
-
-@media screen and (min-width: 1045px) {
-    .populaires {
-        margin-left: 40px;
-    }
-}
+/*##### min:1713px #####*/
 
 @media screen and (min-width: 1713px) {
     .hebecards {
@@ -597,71 +587,15 @@ footer a {
     }
 }
 
-@media (max-width: 425px) {
-    button {
-        width: 51px;
-        border-radius: 14px;
-    }
-    button .fas {
-        color: white;
-    }
-    .find_logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .find {
-        display: none;
-    }
-    form {
-        justify-content: space-between;
-        border: 1px solid #f2f2f2;
-        border-radius: 15px;
-        width: 100%;
-    }
-    #search {
-        border: none;
-        width: 60%;
-    }
-    .popucards {
-        width: 90%;
-    }
-    .hebecards {
-        width: 100%;
-    }
-    .cards_act h3 {
-        font-size: 14px;
-        margin-top: 19px;
+/*##### min:1045px #####*/
+
+@media screen and (min-width: 1045px) {
+    .populaires {
+        margin-left: 40px;
     }
 }
 
-@media only screen and (max-width: 1044px) and (min-width: 426px) {
-    .allcards_popu {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-}
-
-@media (max-width: 319px) {
-    .popudesc h3 {
-        font-size: 14px;
-    }
-    .popudesc p {
-        font-size: 13px;
-    }
-    .popustars {
-        font-size: 13px;
-    }
-    .hebedesc h3 {
-        font-size: 14px;
-    }
-    .hebedesc p {
-        font-size: 13px;
-    }
-    .stars {
-        font-size: 13px;
-    }
-}
+/*##### 1044px #####*/
 
 @media (max-width: 1044px) {
     .mobile_head {
@@ -671,14 +605,16 @@ footer a {
         border-bottom: #F2F2F2 solid 3px;
         border-top: none;
         width: 50%;
+        margin-left: 0px;
     }
     .hebe {
         border-bottom: #0065FC solid 3px;
         border-top: none;
         width: 50%;
+        margin-right: 0px;
     }
     .signup {
-        width: 100%;
+        width: 90%;
         text-align: end;
     }
     .head {
@@ -687,16 +623,16 @@ footer a {
     body {
         margin: 0px;
     }
-    .filter, .all_filter{
+    .filter, .all_filter {
         display: flex;
         flex-wrap: wrap;
     }
-    .all_filter div{
+    .all_filter div {
         margin-bottom: 13px;
     }
     .hebecards {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     .populaires {
         order: 1;
@@ -738,7 +674,7 @@ footer a {
         margin-left: 20px;
         margin-right: 20px;
     }
-    header, .research, .filter, #info {
+    .logo, .research, .filter, #info, .signup {
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -753,11 +689,46 @@ footer a {
     }
 }
 
+/*##### min:426px max:1044px #####*/
+
+@media only screen and (max-width: 1044px) and (min-width: 426px) {
+    .allcards_popu {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+/*##### 1024px #####*/
+
+@media screen and (max-width: 1024px) {
+    .all_filter {
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+}
+
+/*##### 768px #####*/
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .about, .quality, .assistance {
+        margin-bottom: 20px;
+        width: 100%;
+        /*margin-left: 20px;*/
+    }
+}
+
+/*##### min:426px / max:571px #####*/
+
 @media (max-width: 571px) and (min-width: 426px) {
     .hebecards {
         width: 338px;
     }
 }
+
+/*##### 531px #####*/
 
 @media (max-width: 531px) {
     .xlcard, .lscard, .mmcard {
@@ -775,16 +746,70 @@ footer a {
     .title_actxl, .title_actl, .title_actms, .title_actml, .title_acts {
         top: 71%;
     }
+    footer{
+        padding-left: 25px;
+    }
 }
 
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-    }
+/*##### 425px #####*/
 
-    .about, .quality, .assistance {
-        margin-bottom: 20px;
+@media (max-width: 425px) {
+    button {
+        width: 51px;
+        border-radius: 14px;
+    }
+    button .fas {
+        color: white;
+    }
+    .find_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .find {
+        display: none;
+    }
+    form {
+        justify-content: space-between;
+        border: 1px solid #f2f2f2;
+        border-radius: 15px;
         width: 100%;
-        /*margin-left: 20px;*/
+    }
+    #search {
+        border: none;
+        width: 60%;
+    }
+    .popucards {
+        width: 90%;
+    }
+    .hebecards {
+        width: 100%;
+    }
+    .cards_act h3 {
+        font-size: 14px;
+        margin-top: 19px;
+    }
+}
+
+/*##### 319px #####*/
+
+@media (max-width: 319px) {
+    .popudesc h3 {
+        font-size: 14px;
+    }
+    .popudesc p {
+        font-size: 13px;
+    }
+    .popustars {
+        font-size: 13px;
+    }
+    .hebedesc h3 {
+        font-size: 14px;
+    }
+    .hebedesc p {
+        font-size: 13px;
+    }
+    .stars {
+        font-size: 13px;
     }
 }
